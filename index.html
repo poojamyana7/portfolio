@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pooja Myana | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: white;
+      color: #222;
+      font-size: 17px;
+    }
+
+    header {
+      width: 88%;
+      margin: auto;
+      margin-top: 25px;
+      padding: 20px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a2aff;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    header h2 {
+      font-weight: 600;
+      color: white;
+      font-size: 22px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 90px 8% 70px;
+    }
+
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .home h1 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #1a2aff;
+    }
+
+    .home p {
+      max-width: 500px;
+      line-height: 27px;
+      font-size: 18px;
+    }
+
+    .home img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1a2aff;
+      color: white;
+      padding: 13px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 22px;
+    }
+
+    .box-section {
+      background: #f1f4ff;
+      padding: 55px;
+      border-radius: 28px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+      margin-bottom: 60px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 23px;
+      border-radius: 14px;
+      border: 1px solid #e2e8ff;
+    }
+
+    .project-card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #e1e6ff;
+      margin-bottom: 18px;
+      max-width: 780px;
+    }
+
+    .project-card h2 {
+      color: #1a2aff;
+    }
+
+    #contact .contact-box {
+      background: white;
+      max-width: 650px;
+      margin: auto;
+      padding: 35px;
+      border-radius: 22px;
+      border: 1px solid #e0e6ff;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1.5px solid #ced6ff;
+      border-radius: 10px;
+      margin: 8px 0;
+      font-size: 17px;
+    }
+
+    form button {
+      width: 100%;
+      background: #1a2aff;
+      color: white;
+      border: none;
+      padding: 13px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      background: #e9efff;
+      padding: 18px;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    h1 {
+      color: #1a2aff;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Myana Pooja</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div>
+      <h1>Hello, I'm Pooja 👋</h1>
+      <p>Aspiring software developer with strong problem-solving skills, eager to contribute to real-world projects and grow through continuous learning.</p>
+      <a class="btn" href="#about">More About Me</a>
+    </div>
+    <img src="myphoto.jpg" alt="Pooja Image">
+  </section>
+
+  <section id="about">
+    <div class="box-section">
+      <h1>About Me</h1><br>
+      <p>
+        B.Tech in Electronics and Telematics Engineering at
+        <b>G. Narayanamma Institute of Technology and Science</b> (9.69 CGPA).
+      </p><br>
+      <a class="btn" href="Resume.pdf" target="_blank">📄 Download Resume</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="box-section">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="card"><b>Programming:</b><br>Java, Python, C, HTML, CSS, JavaScript</div>
+        <div class="card"><b>Tools:</b><br>VS Code, Arduino IDE, GitHub</div>
+        <div class="card"><b>Concepts:</b><br>DSA (Basics), OOP</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="box-section">
+      <h1>Projects</h1><br>
+      <div class="project-card">
+        <h2>Smart Surveillance System</h2>
+        <p>ESP32 system detecting motion using sensors for night surveillance.</p>
+      </div>
+      <div class="project-card">
+        <h2>Finance Chatbot</h2>
+        <p>AI chatbot using Python with spending analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="box-section">
+      <h1 style="text-align:center;">Get In Touch</h1><br>
+      <div class="contact-box">
+
+        <!-- FORMSPREE FORM -->
+        <form action="https://formspree.io/f/xgoapkpb" method="POST">
+
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Message..." required></textarea>
+
+          <button type="submit">Send Message</button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 Myana Pooja — All Rights Reserved.</footer>
+
+</body>
+</html>
